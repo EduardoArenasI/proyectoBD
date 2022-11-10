@@ -1,0 +1,24 @@
+<h2>Create component</h2>
+
+<form [formGroup]="postForm " (ngSubmit)="onSubmit()" novalidate > 
+
+    <div class="mb-3">
+        <label class="form-label">marca</label>
+        <input formControlName="marca" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">categoria</label>
+        <input formControlName="categorai" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Almacen</label>
+        <input formControlName="almacen" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Precio</label>
+        <input formControlName="Precio" type="text" class="form-control" required>
+    </div>
+
+    <button [disabled]="!postForm.valid" type="submit " class="btn btn-primary"> Enviar</button>
+
+</form>
