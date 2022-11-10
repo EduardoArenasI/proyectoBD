@@ -1,4 +1,4 @@
-<h2>Create component</h2>
+<h2>Añadir zapato</h2>
 
 <form [formGroup]="postForm " (ngSubmit)="onSubmit()" novalidate > 
 
@@ -8,17 +8,17 @@
     </div>
     <div class="mb-3">
         <label class="form-label">categoria</label>
-        <input formControlName="categorai" type="text" class="form-control" required>
+        <input formControlName="categoria" type="text" class="form-control" required>
     </div>
     <div class="mb-3">
-        <label class="form-label">Almacen</label>
+        <label class="form-label">almacen</label>
         <input formControlName="almacen" type="text" class="form-control" required>
     </div>
     <div class="mb-3">
-        <label class="form-label">Precio</label>
-        <input formControlName="Precio" type="text" class="form-control" required>
+        <label class="form-label">precio</label>
+        <input formControlName="precio" type="text" class="form-control" required>
     </div>
-
+    <br>
     <button [disabled]="!postForm.valid" type="submit " class="btn btn-primary"> Enviar</button>
 
 </form>
