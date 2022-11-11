@@ -15,14 +15,20 @@ import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateempComponent } from './createemp/createemp.component';
+import { ShowempComponent } from './showemp/showemp.component';
+import { EditempComponent } from './editemp/editemp.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    CreateempComponent,
+    ShowempComponent,
+    EditempComponent
   ],
   imports: [
     BrowserModule,
