@@ -1,0 +1,35 @@
+<h2>Empleado </h2>
+
+<div class="d-grip gap-2 mt-4">
+<a routerLink="/createemp" class="btn btn-primary" type="button">Añadir Empleado</a>
+</div>
+<br>
+
+<table class="table table-hover table-striped" > 
+<thead class="bg-dark text-white">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Domicilio</th>
+        <th>Sueldo</th>
+        <th></th>
+    </tr>
+</thead>
+
+
+
+
+<tbody>
+    <tr *ngFor="let empleado of Empleado">
+            <td>{{empleado.nombre}}</td>
+            <td>{{empleado.apellido}}</td>
+            <td>{{empleado.domicilio}}</td>
+            <td>{{empleado.sueldo}}</td>
+            <td>
+            <button routerLink="/edit/{{empleado.id}}" class="btn btn-outline-dark" ><i class="fa-solid fa-pen-to-square"></i></button>
+            <button (click)="deleteRow(empleado)" class="btn btn-outline-dark"> <i class="fa-solid fa-delete-left"></i></button>
+            </td>
+    </tr>
+</tbody>
+
+</table>

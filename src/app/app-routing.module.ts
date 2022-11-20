@@ -5,6 +5,10 @@ import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 import { ShowComponent } from './components/show/show.component';
 
+import { ShowempComponent } from './components/showemp/showemp.component';
+//import { EditempComponent } from './editemp/editemp.component;
+//import { CreateempComponent } from './createemp/createemp.component;
+
 
 
 const routes: Routes = [

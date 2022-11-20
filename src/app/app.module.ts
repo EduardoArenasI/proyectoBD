@@ -16,9 +16,9 @@ import { EditComponent } from './components/edit/edit.component';
 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CreateempComponent } from './createemp/createemp.component';
-import { ShowempComponent } from './showemp/showemp.component';
-import { EditempComponent } from './editemp/editemp.component'
+import { CreateempComponent } from './components/createemp/createemp.component';
+import { ShowempComponent } from './components/showemp/showemp.component';
+import { EditempComponent } from './components/editemp/editemp.component'
 
 @NgModule({
   declarations: [

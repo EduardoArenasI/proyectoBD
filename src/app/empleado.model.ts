@@ -1,6 +1,7 @@
-export class empleado {
+export class Empleado {
+    id: string;
     nombre: string;
-    apellidos: string;
+    apellido: string;
     domicilio: string;
     sueldo : string;
 }
