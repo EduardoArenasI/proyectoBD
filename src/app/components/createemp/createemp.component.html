@@ -1,1 +1,24 @@
-<p>createemp works!</p>
+<h2>Añadir Empleado</h2>
+
+<form [formGroup]="empleadoForm " (ngSubmit)="onSubmit()" novalidate > 
+
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input formControlName="nombre" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">apellido</label>
+        <input formControlName="apellido" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">domicilio</label>
+        <input formControlName="domicilio" type="text" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">sueldo</label>
+        <input formControlName="sueldo" type="text" class="form-control" required>
+    </div>
+    <br>
+    <button [disabled]="!empleadoForm.valid" type="submit " class="btn btn-primary"> Enviar</button>
+
+</form>

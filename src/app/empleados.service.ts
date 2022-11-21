@@ -38,7 +38,7 @@ console.log(response)
   }) 
 }
 
-updatePost(empleado: Empleado, id) {
+updateEmpleado(empleado: Empleado, id) {
   return this.angularFirestore
     .collection("empleado")
     .doc(id)

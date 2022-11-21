@@ -1,1 +1,25 @@
-<p>editemp works!</p>
+<h2>actualizar Empleado </h2>
+
+<form [formGroup]="editForm " (ngSubmit)="onSubmit() " novalidate > 
+
+    
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input formControlName="nombre" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Apellido</label>
+            <input formControlName="apellido" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Domicilio</label>
+            <input formControlName="domicilio" type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Sueldo</label>
+            <input formControlName="sueldo" type="text" class="form-control" required>
+        </div>
+        <br>
+        <button type="submit " class="btn btn-primary">actualizar</button>
+    
+    </form>
