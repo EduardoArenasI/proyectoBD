@@ -6,8 +6,8 @@ import { EditComponent } from './components/edit/edit.component';
 import { ShowComponent } from './components/show/show.component';
 
 import { ShowempComponent } from './components/showemp/showemp.component';
-//import { EditempComponent } from './editemp/editemp.component;
-//import { CreateempComponent } from './createemp/createemp.component;
+import { EditempComponent } from './components/editemp/editemp.component';
+import { CreateempComponent } from './components/createemp/createemp.component';
 
 
 
@@ -15,9 +15,11 @@ const routes: Routes = [
   
   { path: '', component: ShowComponent },
   { path: 'create', component: CreateComponent },
-  { path: 'edit/:id', component: EditComponent }
-
-
+  { path: 'edit/:id', component: EditComponent },
+  { path: 'showemp', component: ShowempComponent},
+  { path: 'createemp', component: CreateempComponent },
+  { path: 'editemp/:id', component: EditempComponent }
+  
 ];
 
 @NgModule({

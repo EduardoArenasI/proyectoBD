@@ -1,7 +1,7 @@
-<h2>Empleado </h2>
+<h2>Empleados </h2>
 
 <div class="d-grip gap-2 mt-4">
-<a routerLink="/createemp" class="btn btn-primary" type="button">Añadir Empleado</a>
+<a routerLink="/createemp" class="btn btn-primary" type="button">Añadir Empleados</a>
 </div>
 <br>
 
@@ -26,7 +26,7 @@
             <td>{{empleado.domicilio}}</td>
             <td>{{empleado.sueldo}}</td>
             <td>
-            <button routerLink="/edit/{{empleado.id}}" class="btn btn-outline-dark" ><i class="fa-solid fa-pen-to-square"></i></button>
+            <button routerLink="/editemp/{{empleado.id}}" class="btn btn-outline-dark" ><i class="fa-solid fa-pen-to-square"></i></button>
             <button (click)="deleteRow(empleado)" class="btn btn-outline-dark"> <i class="fa-solid fa-delete-left"></i></button>
             </td>
     </tr>

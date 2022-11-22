@@ -23,11 +23,11 @@ getEmpleadoById(id) {
     .valueChanges() 
 }
 
-createEmpleado(empleaado: Empleado) {
+createEmpleado(empleado: Empleado) {
   return new Promise<any>((resolve, reject) => {
     this.angularFirestore
       .collection("empleado")
-      .add(Empleado)
+      .add(empleado)
     .then((response) => {
 console.log(response)
 
